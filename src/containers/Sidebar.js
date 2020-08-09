@@ -1,30 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import avatar from "../avatar.png";
+import logo from "../logo.png";
 
 export default function Sidebar() {
   return (
     <aside className="main-sidebar sidebar-dark-primary">
       {/* Brand Logo */}
-      <a href="index3.html" className="brand-link">
-        {/* <img
-          src="../logo.png"
+      <Link to="/dashboard/dashboard1" className="brand-link">
+        <img
+          src={logo}
           alt="AdminLTE Logo"
           className="brand-image img-circle elevation-3"
           style={{ opacity: ".8" }}
-        /> */}
+        />
         <span className="brand-text font-weight-light">AdminLTE 3</span>
-      </a>
+      </Link>
       {/* Sidebar */}
       <div className="sidebar">
         {/* Sidebar user panel (optional) */}
         <div className="user-panel mt-3 pb-3 mb-3 d-flex">
-          {/* <div className="image">
+          <div className="image">
             <img
-              src="%%PUBLIC_URL%/dist/"
+              src={avatar}
               className="img-circle elevation-2"
               alt="User Image"
             />
-          </div> */}
+          </div>
           <div className="info">
             <a href="#" className="d-block">
               Alexander Pierce
@@ -51,21 +53,21 @@ export default function Sidebar() {
               </a>
               <ul className="nav nav-treeview">
                 <li className="nav-item">
-                  <a href="./index.html" className="nav-link">
+                  <Link to="/dashboard/dashboard1" className="nav-link active">
                     <i className="far fa-circle nav-icon" />
-                    <p>Dashboard v1</p>
-                  </a>
+                    <p>Dashboard 1</p>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="./index2.html" className="nav-link">
+                  <Link to="/dashboard/dashboard2" className="nav-link">
                     <i className="far fa-circle nav-icon" />
-                    <p>Dashboard v2</p>
-                  </a>
+                    <p>Dashboard 2</p>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/dashboard/dashboard3" className="nav-link active">
+                  <Link to="/dashboard/dashboard3" className="nav-link">
                     <i className="far fa-circle nav-icon" />
-                    <p>Dashboard v3</p>
+                    <p>Dashboard 3</p>
                   </Link>
                 </li>
               </ul>
