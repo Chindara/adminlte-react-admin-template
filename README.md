@@ -15,3 +15,6 @@ $ cd my-project
 # install app's dependencies
 $ npm install
 ```
+
+## Screens
+![Dashboard](https://i.imgur.com/xuOApDV.png)
